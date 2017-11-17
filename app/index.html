@@ -1,0 +1,29 @@
+﻿<html ng-app="app">
+<head>
+    <title>Test E-Construmarket</title>
+    <meta charset="utf-8" />
+</head>
+<body>
+
+    <div ng-controller="mainController">
+        
+        <ul>
+            <li><a href="#!/login">Login</a></li>
+            <li><a href="#!/dashboard">Dashboard</a></li>
+            <li><a href="#!/products">Products</a></li>
+        </ul>
+
+        <p>Cabeçalho da página</p>
+
+        <div ng-view>
+
+        </div>
+
+        <p>Rodapé da página</p>
+    </div>
+
+    <script src="../src/js/angular.min.js"></script>
+    <script src="../src/js/angular-route.min.js"></script>
+    <script src="../src/js/main.js"></script>
+</body>
+</html>
