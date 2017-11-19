@@ -1,0 +1,17 @@
+﻿<div class="common">
+    <h1 class="common ftpreto">Produtos</h1>
+    
+    <div class="floatLeft two-column-plus">
+        <span class="common ftpreto padding10">Busca de produtos:</span>
+        <input ng-model="searchtip" ng-change="searchProduct()" class="common commonInput padding01" type="text" placeholder="Digite o nome do produto" />
+    </div>
+    
+    <div class="floatRight seven-column" id="gridProduto">
+        <div class="produto floatLeft bgbranco commonbtn" ng-repeat="prod in searchresult">
+            <span class="common borderbox ft20 bgmarrom ftbranco padding11">{{prod.productName}}</span>
+            <span class="common padding11 ft18 borderbox">{{prod.brandName}}</span>
+            <span class="floatLeft padding11 ft12 borderbox">{{prod.sku}}</span>
+            <span class="floatRight padding11 ft16 ftbold borderbox">{{prod.price}}</span>
+        </div>
+    </div>
+</div>

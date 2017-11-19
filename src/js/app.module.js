@@ -7,8 +7,13 @@ function config($routeProvider, $locationProvider) {
     $routeProvider
 
         .when('/', {
-            controller: 'DashboardController',
-            templateUrl: 'pages/dashboard.html'
+            controller: 'HomeController',
+            templateUrl: 'pages/home.html'
+        })
+    
+        .when('/sobre', {
+            templateUrl: 'pages/sobre.html',
+            controller: 'SobreController'
         })
 
         .when('/login', {
@@ -16,14 +21,14 @@ function config($routeProvider, $locationProvider) {
             controller: 'LoginController'
         })
 
-        .when('/dashboard', {
-            controller: 'DashboardController',
-            templateUrl: 'pages/dashboard.html'
+        .when('/home', {
+            controller: 'HomeController',
+            templateUrl: 'pages/home.html'
         })
 
-        .when('/products', {                
-            controller: 'ProductsController',
-            templateUrl: 'pages/products.html'
+        .when('/produtos', {
+            controller: 'ProdutosController',
+            templateUrl: 'pages/produtos.html'
         })
 
         .otherwise({ redirectTo: '/login' });
@@ -39,7 +44,7 @@ function run($rootScope, $location, $cookieStore, $http) {
 
     //Redirect to login page if not logged in and trying to access a restricted page
     $rootScope.$on('$locationChangeStart', function (event, next, current) {
-        var restrictedPage = ($location.path() == '/' || $location.path() == '/dashboard' || $location.path() == '/products') ? true: false;
+        var restrictedPage = ($location.path() == '/' || $location.path() == '/home' || $location.path() == '/produtos') ? true: false;
         var loggedIn = $rootScope.globals.currentUser;
         
         if (restrictedPage && !loggedIn) $location.path('/login');

@@ -92,6 +92,9 @@ ul {list-style: none;padding: 0px;}
     margin-bottom: 5%;
 }
 
+.loadingGif {position: absolute;bottom: 10px;right: 10px;}
+.loadingGif img {width: 70px;}
+
 
 
 

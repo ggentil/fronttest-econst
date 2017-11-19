@@ -1,1 +1,1 @@
-"# fronttest-econst" 
+O projeto foi desenvolvido e testado em um ambiente emulado, usando a ferramenta XAMPP.

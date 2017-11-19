@@ -14,10 +14,13 @@
                     <h1 class="floatleft ftbranco ftbold ft20 margin20">LOGO</h1>
                     <ul class="flex flex-horizontal-center dmenu" ng-show="viewMenu">
                         <li class="flex flex-vertical-center">
-                            <a class="under-none ftbranco margin01" href="#!/dashboard">Dashboard</a>
+                            <a class="under-none ftbranco margin01" href="#!/home">Home</a>
                         </li>
                         <li class="flex flex-vertical-center">
-                            <a class="under-none ftbranco margin01" href="#!/products">Products</a>
+                            <a class="under-none ftbranco margin01" href="#!/sobre">Sobre nós e contato</a>
+                        </li>
+                        <li class="flex flex-vertical-center">
+                            <a class="under-none ftbranco margin01" href="#!/produtos">Produtos</a>
                         </li>
                     </ul>
                 </div>
@@ -34,6 +37,10 @@
                 <div ng-view></div>
             </div>
         </div>
+        
+        <div class="loadingGif" ng-show="dataLoading">
+            <img src="../src/img/loading.gif" />
+        </div>
     </div>
 
     <script src="../src/js/angular.min.js"></script>
@@ -41,7 +48,7 @@
     <script src="../src/js/angular-cookies.min.js"></script>
     
     <script src="../src/js/app.module.js"></script>
-    <script src="../src/js/authentication.service.js"></script>
-    <script src="../src/js/common.controllers.js"></script>
+    <script src="../src/js/servicesAndFactorys.js"></script>
+    <script src="../src/js/commonControllers.js"></script>
 </body>
 </html>
