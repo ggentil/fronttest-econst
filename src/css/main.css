@@ -1,0 +1,102 @@
+/** Base **/
+body, html {margin: 0px;padding: 0px;font-family: Arial;}
+.container {
+    max-width: 1004px;
+    width: 1004px;
+    margin: 0 auto;    
+}
+ul {list-style: none;padding: 0px;}
+.floatLeft {float: left;}
+.floatRight {float: right;}
+.ten-column {width: 100%;}
+.seven-column {width: 70%;}
+.five-column {width: 50%;}
+.four-column-plus {width: 45%;}
+.four-column {width: 40%;}
+.two-column-plus {width: 25%;}
+.flex {display: flex;}
+.flex-dir-col {flex-direction: column;}
+.flex-horizontal-center {align-items: center;}
+.flex-vertical-center {justify-content: center;}
+.common {float: left;width: 100%;}
+.text-center {text-align: center;}
+.under-none {text-decoration: none;}
+.borderbox {box-sizing: border-box;}
+.commonbtn {
+    border-radius: 3px;
+    border: none;
+}
+.commonInput {
+    border: none;
+    border-radius: 3px;
+    line-height: 38px;
+    height: 38px;
+}
+
+.padding00 {padding: 0px;}
+.padding10 {padding: 10px 0px;}
+.padding11 {padding: 10px;}
+.padding01 {padding: 0px 10px;}
+.padding20 {padding: 20px 0px;}
+.padding22 {padding: 20px;}
+.padding02 {padding: 0px 20px;}
+.margin00 {margin: 0px;}
+.margin10 {margin: 10px 0px;}
+.margin11 {margin: 10px;}
+.margin01 {margin: 0px 10px;}
+.margin20 {margin: 20px 0px;}
+.margin22 {margin: 20px;}
+.margin02 {margin: 0px 20px;}
+
+/** Tip **/
+.ftbold {font-weight: 700;}
+.ft12 {font-size: 12px;}
+.ft13 {font-size: 13px;}
+.ft14 {font-size: 14px;}
+.ft16 {font-size: 16px;}
+.ft18 {font-size: 18px;}
+.ft20 {font-size: 20px;}
+
+
+/** Colors **/
+.bgmarrom {background-color: #5C4B51;}
+.bgazul {background-color: #8CBEB2;}
+.bgbeje {background-color: #F2EBBF;}
+.bglaranja {background-color: #F3B562;}
+.bgvermelho {background-color: #F06060;}
+.bgbranco {background-color: #ffffff;}
+
+.ftmarrom {color: #5C4B51;}
+.ftazul {color: #8CBEB2;}
+.ftbeje {color: #F2EBBF;}
+.ftlaranja {color: #F3B562;}
+.ftvermelho {color: #F06060;}
+.ftbranco {color: #ffffff;}
+.ftpreto {color: #333333;}
+
+.dmenu {margin-left: 30px;}
+.dmenu a:hover {color: #8CBEB2;transition: all .2s;}
+.loginForm {align-items: flex-start;}
+.loginForm input:not([type="submit"]) {margin-bottom: 10px;width: 260px;outline: none;}
+.loginForm button {cursor: pointer;}
+
+
+#gridProduto {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+#gridProduto .produto {
+    border: 1px solid #5C4B51;
+    flex-basis: 47%;
+    margin-bottom: 5%;
+}
+
+
+
+
+
+
+
+
+

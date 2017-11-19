@@ -1,1 +1,8 @@
-﻿<h1>Login</h1>
+﻿<div class="common">
+    <h1 class="common ftpreto">Bem-vindo(a)!</h1>
+    <form ng-submit="login()" method="post" name="loginForm" class="common loginForm flex flex-dir-col">
+        <input ng-model="username" type="text" name="username" required placeholder="Usuário" class="commonInput padding01 ft16 ftpreto" />
+        <input ng-model="password" type="password" name="password" required placeholder="Senha" class="commonInput padding01 ft16 ftpreto" />
+        <input class="bgazul commonbtn ftbranco ft16 ftbold padding11" type="submit" value="Autenticar" />
+    </form>
+</div>
